@@ -1,4 +1,3 @@
-
 // Funció que s'executa quan tot el contingut HTML ha estat carregat
 document.addEventListener("DOMContentLoaded", function() {
   // Selecció del botó que actua com a toggler de la barra de navegació
@@ -99,7 +98,23 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 100) {
+      document.querySelector('.scroll-to-top').style.display = 'block';
+    } else {
+      document.querySelector('.scroll-to-top').style.display = 'none';
+    }
+  });
 
+  document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
 
 
 
