@@ -1,247 +1,245 @@
+/* Reinicialització d'estils */
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Estableix el model de caixa */
 }
 
+/* Estils Generals */
 body {
-  font-size: 16px;
+  font-size: 16px; /* Mida de la font base */
+  margin: 0; /* Elimina els marges per defecte */
+  color: #181717; /* Color de text principal */
+  min-height: 100vh; /* Alçada mínima del cos igual al 100% de l'alçada del viewport */
+  display: flex; /* Utilitza el model de caixa flex */
+  flex-direction: column; /* Organitza els elements en columna */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Tipus de font predeterminat */
+  background-color: #fcfcfc; /* Color de fons */
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-
-body {
-  margin: 0;
-  color: #181717;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #fcfcfc;
-}
-
-
+/* Estils de Navegació */
 .nav-link {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define la fuente de letra */
-  font-size: 16px; /* Define el tamaño de la fuente */
-  font-weight: bold; /* Define el peso de la fuente */
-  /* Otros estilos opcionales */
-  text-transform:initial; /* Convierte el texto a mayúsculas */
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Tipus de font per als enllaços de navegació */
+  font-size: 16px; /* Mida de font per als enllaços de navegació */
+  font-weight: bold; /* Pes de font */
+  text-transform: initial; /* Converteix el text en majúscules */
 }
-
 
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1030;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
+  position: fixed; /* Fixa la barra de navegació a la part superior de la finestra */
+  top: 0; /* Estableix la posició a la part superior */
+  width: 100%; /* Amplada completa */
+  z-index: 1030; /* Estableix la posició z per superposar-se a altres elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra */
+  transition: background-color 0.3s ease; /* Transició de color de fons */
 }
 
-
 .nav-item {
-  padding: 10px 15px;
-  display: inline-block;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 5px;
+  padding: 10px 15px; /* Espaiat intern */
+  display: inline-block; /* Fa que els elements es mostren en línia */
+  text-transform: uppercase; /* Converteix el text en majúscules */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transició de color de fons i transformació */
+  border-radius: 5px; /* Vora arrodonida */
 }
 
 .nav-item:hover {
-  background-color: #0a9a31;
-  
-  transform: scale(1.05);
+  background-color: #0a9a31; /* Canvi de color de fons en hover */
+  transform: scale(1.05); /* Augment de l'escala en hover */
 }
 
-
+/* Portada */
 .cover {
-  height: 450px;
-  color: rgba(255, 255, 255, 0.922);
-  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eeb3241560763.57aaf65ae7968.gif');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
+  height: 450px; /* Alçada */
+  color: rgba(255, 255, 255, 0.922); /* Color de text */
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eeb3241560763.57aaf65ae7968.gif'); /* Imatge de fons */
+  background-size: cover; /* Cobreix tota l'àrea disponible */
+  background-position: center; /* Posició del fons */
+  display: flex; /* Utilitza el model de caixa flex */
+  justify-content: center; /* Centra horitzontalment */
+  align-items: center; /* Centra verticalment */
+  text-align: center; /* Alineació del text */
+  overflow: hidden; /* Oculta l'overflow */
+  position: relative; /* Posició relativa */
 }
 
-/* Estil del botó i efectes d'hover */
+/* Botó "Conèix-nos" */
 .button-coneixense {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 8px;
+  background-color: #4CAF50; /* Color de fons */
+  border: none; /* Sense vora */
+  color: white; /* Color de text */
+  padding: 15px 32px; /* Espaiat intern */
+  text-align: center; /* Alineació del text */
+  text-decoration: none; /* Sense decoració de text */
+  display: inline-block; /* Fa que l'element es mostri com un bloc en línia */
+  font-size: 16px; /* Mida de font */
+  margin: 4px 2px; /* Marges */
+  transition-duration: 0.4s; /* Duració de la transició */
+  cursor: pointer; /* Canvia el cursor a mà */
+  border-radius: 8px; /* Vora arrodonida */
 }
 
 .button-coneixense:hover {
-  background-color: #116b11;
+  background-color: #116b11; /* Canvi de color de fons en hover */
 }
 
 .button-coneixense a {
-  color: white;
-  text-decoration: none;
+  color: white; /* Color del text */
+  text-decoration: none; /* Sense decoració de text */
 }
 
+/* Contingut de Text */
 p {
-  text-align: justify;
-  font-size: 1.1em;
+  text-align: justify; /* Alineació justificada */
+  font-size: 1.1em; /* Mida de font */
 }
 
 h3 {
-  text-align: center;
-  color: #0a0a0a;
-  margin-bottom: 30px;
-  font-weight: bold;
+  text-align: center; /* Alineació del text */
+  color: #0a0a0a; /* Color del text */
+  margin-bottom: 30px; /* Marge inferior */
+  font-weight: bold; /* Pes de font */
 }
-
+/* Tarjetes */
 .card {
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-color: #fffdfd;
-  text-align: center; /* Centre el text dins de les targetes */
-  padding: px; /* Afegeix espaiat intern per un millor aspecte */
+  border-radius: 10px; /* Borde arrodonit */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transició de transformació y sombra */
+  background-color: #fffdfd; /* Color de fons */
+  text-align: center; /* Alineació del text */
+  padding: px; /* Espaiat intern per a una millor aparença */
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px); /* Desplaçament en l'eix y en hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra més gran en hover */
 }
 
 .card-title {
-  font-weight: bold; /* Fa els noms en negreta */
-  font-size: 1.2em; /* Augmenta la mida del text */
+  font-weight: bold; /* Text en negreta */
+  font-size: 1.2em; /* Mida del text */
 }
 
 .card-info p {
-  margin: 5px 0;
+  margin: 5px 0; /* Marge entre paràgrafs */
 }
 
-
-
+/* Peu de pàgina */
 .footer {
-  background-color: #0e8712;
-  color: #fff;
-  width: 100%;
-  padding: 40px 0;
-  text-align: center;
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
-  flex-shrink: 0;
+  background-color: #0e8712; /* Color de fons */
+  color: #fff; /* Color del text */
+  width: 100%; /* Amplada completa */
+  padding: 40px 0; /* Espaiat intern */
+  text-align: center; /* Alineació del text */
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  flex-shrink: 0; /* Evita la reducció del peu de pàgina */
 }
 
 .footer .social-icons img {
-  width: 40px;
-  margin-right: 20px;
-  transition: transform 0.3s;
+  width: 40px; /* Amplada de les icones de xarxes socials */
+  margin-right: 20px; /* Marge dret */
+  transition: transform 0.3s; /* Transició */
 }
 
 .footer .social-icons img:hover {
-  transform: scale(1.2);
+  transform: scale(1.2); /* Augmenta l'amplada en hover */
 }
 
 .footer .copyright {
-  margin-top: 20px; /* Ajusta el margen superior si es necesario */
-  margin-bottom: 0; /* Asegura que no haya margen inferior */
-  font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
-  text-align: center;
+  margin-top: 20px; /* Marge superior */
+  margin-bottom: 0; /* Sense marge inferior */
+  font-size: 14px; /* Mida de font */
+  text-align: center; /* Alineació del text */
 }
 
-
+/* Icones de contacte */
 .contact-icons img {
-  width: 25px;
-  height: auto;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: transform 0.3s;
+  width: 25px; /* Amplada de les icones de contacte */
+  height: auto; /* Alçada automàtica */
+  margin-right: 10px; /* Marge dret */
+  cursor: pointer; /* Cursor apuntador */
+  transition: transform 0.3s; /* Transició */
 }
 
 .contact-icons img:hover {
-  transform: scale(1.2);
+  transform: scale(1.2); /* Augmenta l'amplada en hover */
 }
 
-
 .footer .logo-img {
-  max-width: 80px; /* Ajusta aquest valor segons sigui necessari */
-  height: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 80px; /* Amplada màxima del logotip */
+  height: auto; /* Alçada automàtica */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transició */
 }
 
 .footer .logo-img:hover {
-  transform: scale(1.1); /* Augmenta la mida un 10% */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Afegeix una ombra */
+  transform: scale(1.1); /* Augmenta l'amplada un 10% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra */
 }
 
-
-
+/* Botons d'acció */
 .btn-primary {
   background-color: #4CAF50; /* Color de fons verd */
-  border-color: #4CAF50; /* Color de la vora verd */
+  border-color: #4CAF50; /* Color del contorn verd */
   color: white; /* Color del text blanc */
 }
 
 .btn-primary:hover {
   background-color: #116b11; /* Color de fons verd més fosc en hover */
-  border-color: #116b11; /* Color de la vora verd més fosc en hover */
+  border-color: #116b11; /* Color del contorn verd més fosc en hover */
   color: white; /* Color del text blanc en hover */
 }
 
-
+/* Contingut */
 .content {
-  flex: 1 0 auto;
-  padding-top: 60px; /* Ajusta l'alçada del navbar per evitar solapaments */
+  flex: 1 0 auto; /* Flexbox */
+  padding-top: 60px; /* Espai superior per evitar superposicions amb la barra de navegació */
 }
 
+/* Mitjans Responsius */
 @media screen and (max-width: 768px) {
-  /* Estilos específicos para pantallas más pequeñas, como teléfonos móviles */
+  /* Estils específics per a pantalles més petites, com ara telèfons mòbils */
 }
 
 @media screen and (min-width: 1200px) {
-  /* Estilos específicos para pantallas más grandes, como computadoras de escritorio */
+  /* Estils específics per a pantalles més grans, com ara ordinadors de sobretaula */
 }
 
+/* Imatges */
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Amplada màxima */
+  height: auto; /* Alçada automàtica */
 }
 
+/* Consentiment de galetes */
 #cookieConsent {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #dcdcdc;
-  text-align: center;
-  z-index: 9999;
-  font-family: 'Arial', sans-serif;
-  font-size: 14px;
-  max-width: 400px;
-  width: 80%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: fixed; /* Fixa la posició */
+  top: 50%; /* Posició superior al 50% */
+  left: 50%; /* Posició esquerra al 50% */
+  transform: translate(-50%, -50%); /* Centra horitzontalment i verticalment */
+  padding: 20px; /* Espaiat intern */
+  background-color: #f8f8f8; /* Color de fons */
+  border: 1px solid #dcdcdc; /* Vora */
+  text-align: center; /* Alineació del text */
+  z-index: 9999; /* Posició z */
+  font-family: 'Arial', sans-serif; /* Tipus de font */
+  font-size: 14px; /* Mida de font */
+  max-width: 400px; /* Amplada màxima */
+  width: 80%; /* Amplada */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombra */
 }
 
 #cookieConsent .accept-btn,
 #cookieConsent .decline-btn {
-  margin-top: 10px;
-  font-size: 14px;
+  margin-top: 10px; /* Marge superior */
+  font-size: 14px; /* Mida de font */
 }
+
+/* Botó de tornar a dalt */
+.scroll-to-top {
+  display: none; /* Oculta per defecte */
+  position: fixed; /* Fixa la posició */
+  bottom: 20px; /* Posició inferior */
+  right: 20px; /* Posició dreta */
+  z-index: 9999; /* Posició z */
+}
+
 
 
 
