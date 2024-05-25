@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""/>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-xodZBNTC" crossorigin=""></script>
   <script src="Codi_Script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -45,7 +46,8 @@
       </div>
     </div>
   </header>
-  
+
+
   <!-- Contingut Principal -->
   <div id="content" class="container mt-3 mb-3 content"></div>
   
@@ -101,15 +103,24 @@
   
 
   <!-- Consentiment de galetes -->
-<div id="cookieConsent" class="alert alert-info alert-dismissible fade show" role="alert">
-  Aquest lloc web utilitza galetes per garantir que obtinguis la millor experiència al nostre lloc web.
-  <br>
-  <button type="button" class="btn btn-primary btn-sm accept-btn">
-    Acceptar
-  </button>
-  <button type="button" class="btn btn-secondary btn-sm decline-btn">
-    No acceptar
-  </button>
-</div>
+  <div id="cookieConsent" class="alert alert-info alert-dismissible fade show" role="alert">
+    Aquest lloc web utilitza galetes per garantir que obtinguis la millor experiència al nostre lloc web.
+    <br>
+    <button type="button" class="btn btn-primary btn-sm accept-btn">
+      Acceptar
+    </button>
+    <button type="button" class="btn btn-secondary btn-sm decline-btn">
+      No acceptar
+    </button>
+  </div>
+
+  <!-- Fletxa pel moviment -->
+  <div class="scroll-to-top">
+    <a href="#top" class="btn btn-primary btn-lg back-to-top" role="button">
+         <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
 </body>
 </html>
+
+
