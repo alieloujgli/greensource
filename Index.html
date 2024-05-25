@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Green Source - Your go-to source for sustainable living information." />
+  <title>Green Source</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="Estilos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-xodZBNTC" crossorigin=""></script>
+  <script src="Codi_Script.js"></script>
+</head>
+
+<body>
+  <!-- Capçalera -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#Presentacio" onclick="loadContent('Presentacio.html')">
+        <span style="font-weight: bold;">Green</span>
+        <img src="imatges/logo_2.png" width="40" height="40" class="d-inline-block align-top" alt="logo planeta">
+        <span style="font-weight: bold;">Source</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#Presentacio" onclick="loadContent('Presentacio.html')">INICI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Qui_som" onclick="loadContent('Qui_som.html')">QUI SOM?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Que_fem" onclick="loadContent('Que_fem.html')">QUÈ FEM?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Mapa" onclick="loadContent('Mapa.html')">MAPA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contacte" onclick="loadContent('Contacte.html')">CONTACTE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Contingut Principal -->
+  <div id="content" class="container mt-3 mb-3 content"></div>
+  
+  <!-- Peu de pàgina -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Informació de Contacte -->
+        <div class="col-md-4">
+          <h5 class="text-center mb-4">Informació de Contacte:</h5>
+          <p>Email: GreenSource.investiga@urv.cat</p>
+          <p>Telèfon: +905690959</p>
+        </div>
+        <!-- Troba'ns -->
+        <div class="col-md-4">
+          <h5 class="text-center mb-4">Troba'ns:</h5>
+          <div class="social-icons text-center">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="imatges/facebook.png" alt="Facebook" class="img-fluid" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="imatges/instagram-logo-instagram-icon-transparent-free.png" alt="Instagram" class="img-fluid" />
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="imatges/twitter_x_new_logo_x_rounded_icon_256078.png" alt="Twitter" class="img-fluid" />
+            </a>
+            <a href="https://www.moodle.com" target="_blank">
+              <img src="imatges/moodle.png" alt="Moodle" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+        <!-- Entitats Col·laboradores -->
+        <div class="col-md-4">
+          <h5 class="text-center mb-4">Entitats Col·laboradores:</h5>
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-6 text-center">
+              <img src="imatges/urv.png" alt="Empresa 1" class="img-fluid logo-img" />
+            </div>
+            <div class="col-6 col-md-6 text-center">
+              <img src="imatges/Canvi.png" alt="Empresa 2" class="img-fluid logo-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="row mt-4">
+        <div class="col-md-12 text-center small">
+          <p class="copyright">Drets d'autor © 2024 Green Source. Tots els drets reservats.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Consentiment de galetes -->
+<div id="cookieConsent" class="alert alert-info alert-dismissible fade show" role="alert">
+  Aquest lloc web utilitza galetes per garantir que obtinguis la millor experiència al nostre lloc web.
+  <br>
+  <button type="button" class="btn btn-primary btn-sm accept-btn">
+    Acceptar
+  </button>
+  <button type="button" class="btn btn-secondary btn-sm decline-btn">
+    No acceptar
+  </button>
+</div>
+</body>
+</html>

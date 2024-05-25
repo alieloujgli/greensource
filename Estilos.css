@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+body {
+  margin: 0;
+  color: #181717;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #fcfcfc;
+}
+
+
+.nav-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define la fuente de letra */
+  font-size: 16px; /* Define el tamaño de la fuente */
+  font-weight: bold; /* Define el peso de la fuente */
+  /* Otros estilos opcionales */
+  text-transform:initial; /* Convierte el texto a mayúsculas */
+
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+
+.nav-item {
+  padding: 10px 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-item:hover {
+  background-color: #0a9a31;
+  
+  transform: scale(1.05);
+}
+
+
+.cover {
+  height: 450px;
+  color: rgba(255, 255, 255, 0.922);
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eeb3241560763.57aaf65ae7968.gif');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Estil del botó i efectes d'hover */
+.button-coneixense {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button-coneixense:hover {
+  background-color: #116b11;
+}
+
+.button-coneixense a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.1em;
+}
+
+h3 {
+  text-align: center;
+  color: #0a0a0a;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fffdfd;
+  text-align: center; /* Centre el text dins de les targetes */
+  padding: px; /* Afegeix espaiat intern per un millor aspecte */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-weight: bold; /* Fa els noms en negreta */
+  font-size: 1.2em; /* Augmenta la mida del text */
+}
+
+.card-info p {
+  margin: 5px 0;
+}
+
+
+
+.footer {
+  background-color: #0e8712;
+  color: #fff;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.footer .social-icons img {
+  width: 40px;
+  margin-right: 20px;
+  transition: transform 0.3s;
+}
+
+.footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer .copyright {
+  margin-top: 20px; /* Ajusta el margen superior si es necesario */
+  margin-bottom: 0; /* Asegura que no haya margen inferior */
+  font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
+  text-align: center;
+}
+
+
+.contact-icons img {
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2);
+}
+
+
+.footer .logo-img {
+  max-width: 80px; /* Ajusta aquest valor segons sigui necessari */
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer .logo-img:hover {
+  transform: scale(1.1); /* Augmenta la mida un 10% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Afegeix una ombra */
+}
+
+
+
+.btn-primary {
+  background-color: #4CAF50; /* Color de fons verd */
+  border-color: #4CAF50; /* Color de la vora verd */
+  color: white; /* Color del text blanc */
+}
+
+.btn-primary:hover {
+  background-color: #116b11; /* Color de fons verd més fosc en hover */
+  border-color: #116b11; /* Color de la vora verd més fosc en hover */
+  color: white; /* Color del text blanc en hover */
+}
+
+
+.content {
+  flex: 1 0 auto;
+  padding-top: 60px; /* Ajusta l'alçada del navbar per evitar solapaments */
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para pantallas más pequeñas, como teléfonos móviles */
+}
+
+@media screen and (min-width: 1200px) {
+  /* Estilos específicos para pantallas más grandes, como computadoras de escritorio */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#cookieConsent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  z-index: 9999;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  max-width: 400px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#cookieConsent .accept-btn,
+#cookieConsent .decline-btn {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+
