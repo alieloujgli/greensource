@@ -1,0 +1,1 @@
+var json_CentredInvestigaciClimticaGreenSource_3 = {"type":"FeatureCollection","name":"CentredInvestigaciClimticaGreenSource_3","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"GSOURCE":"Centre d'Investigació Green Source"},"geometry":{"type":"Point","coordinates":[1.148022098789661,41.102833490244812]}}]}
